@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loya.android.blogapp.PostActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/colorGray"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_select_an_image"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity = "center_vertical"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:hint="@string/post_title"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/descField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_outline"
+            android:hint="@string/post_description"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit_post"
+            android:textColor="@android:color/white" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

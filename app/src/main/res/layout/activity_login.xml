@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loya.android.blogapp.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/loginEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/loginPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEmailField"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="47dp"
+        android:text="Sign In"
+        android:layout_below="@+id/loginPasswordField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/loginBtn"
+        android:layout_toRightOf="@+id/loginBtn"
+        android:layout_toEndOf="@+id/loginBtn"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <Button
+        android:id="@+id/newAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Need a new account?" />
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/loginBtn"
+        android:layout_alignRight="@+id/loginBtn"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"/>
+</RelativeLayout>

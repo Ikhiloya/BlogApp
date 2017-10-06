@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loya.android.blogapp.SetupActivity">
+
+
+    <ImageButton
+        android:id="@+id/setupImageBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#0000"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+    <EditText
+        android:id="@+id/setupDisplayNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/setupImageBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Enter display name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/finishSetupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Finish Setup" />
+
+    <ProgressBar
+        android:id="@+id/setupProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupDisplayNameField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+</RelativeLayout>
